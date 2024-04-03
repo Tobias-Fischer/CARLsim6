@@ -59,10 +59,8 @@
 	// handling future CUDA toolkit API differences
 	#if defined(__CUDA5__) || defined(__CUDA6__) || defined(__CUDA7__) || defined(__CUDA8__) || defined(__CUDA91__) || defined(__CUDA10__) || defined(__CUDA11__) 
 
-		#include <helper_cuda.h>
-		#include <helper_functions.h>
-		#include <helper_timer.h>
-		//#include <helper_math.h>
+		#include "helper_cuda.h"
+		#include "helper_timer.h"
 
 		#define CUDA_CREATE_TIMER(x) sdkCreateTimer(&(x))
 		#define CUDA_DELETE_TIMER(x) sdkDeleteTimer(&(x))
